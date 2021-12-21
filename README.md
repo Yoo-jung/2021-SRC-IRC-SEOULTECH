@@ -1,0 +1,2 @@
+# 2021-SRC-IRC-SEOULTECH
+씨름로봇
