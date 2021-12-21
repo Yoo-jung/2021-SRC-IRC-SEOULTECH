@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"dbwjd_servo\startup_stm32f103xb.o"
+"dbwjd_servo\main.o"
+"dbwjd_servo\gpio.o"
+"dbwjd_servo\tim.o"
+"dbwjd_servo\stm32f1xx_it.o"
+"dbwjd_servo\stm32f1xx_hal_msp.o"
+"dbwjd_servo\stm32f1xx_hal_timebase_tim.o"
+"dbwjd_servo\stm32f1xx_hal_gpio_ex.o"
+"dbwjd_servo\stm32f1xx_hal_tim.o"
+"dbwjd_servo\stm32f1xx_hal_tim_ex.o"
+"dbwjd_servo\stm32f1xx_hal.o"
+"dbwjd_servo\stm32f1xx_hal_rcc.o"
+"dbwjd_servo\stm32f1xx_hal_rcc_ex.o"
+"dbwjd_servo\stm32f1xx_hal_gpio.o"
+"dbwjd_servo\stm32f1xx_hal_dma.o"
+"dbwjd_servo\stm32f1xx_hal_cortex.o"
+"dbwjd_servo\stm32f1xx_hal_pwr.o"
+"dbwjd_servo\stm32f1xx_hal_flash.o"
+"dbwjd_servo\stm32f1xx_hal_flash_ex.o"
+"dbwjd_servo\stm32f1xx_hal_exti.o"
+"dbwjd_servo\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "dbwjd_servo\dbwjd_servo.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "dbwjd_servo.map" -o dbwjd_servo\dbwjd_servo.axf
