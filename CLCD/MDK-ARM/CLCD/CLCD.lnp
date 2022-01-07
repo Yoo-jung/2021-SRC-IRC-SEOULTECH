@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"clcd\startup_stm32f103xb.o"
+"clcd\main.o"
+"clcd\gpio.o"
+"clcd\usart.o"
+"clcd\stm32f1xx_it.o"
+"clcd\stm32f1xx_hal_msp.o"
+"clcd\stm_lcd16x2.o"
+"clcd\stm32f1xx_hal_gpio_ex.o"
+"clcd\stm32f1xx_hal_tim.o"
+"clcd\stm32f1xx_hal_tim_ex.o"
+"clcd\stm32f1xx_hal_uart.o"
+"clcd\stm32f1xx_hal.o"
+"clcd\stm32f1xx_hal_rcc.o"
+"clcd\stm32f1xx_hal_rcc_ex.o"
+"clcd\stm32f1xx_hal_gpio.o"
+"clcd\stm32f1xx_hal_dma.o"
+"clcd\stm32f1xx_hal_cortex.o"
+"clcd\stm32f1xx_hal_pwr.o"
+"clcd\stm32f1xx_hal_flash.o"
+"clcd\stm32f1xx_hal_flash_ex.o"
+"clcd\stm32f1xx_hal_exti.o"
+"clcd\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "CLCD\CLCD.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "CLCD.map" -o CLCD\CLCD.axf
